@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ToDoCollectionViewCell" customModule="Notion_API_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLE-bj-Xl9">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="svF-uF-0HH">
+                                <rect key="frame" x="8" y="8" width="374" height="24"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mff-Xs-iAM">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsP-Fd-sYv">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="BnW-lT-pOB"/>
+                                                    <constraint firstAttribute="width" constant="24" id="bdm-Op-O0d"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="ZsP-Fd-sYv" firstAttribute="top" secondItem="mff-Xs-iAM" secondAttribute="top" id="RIu-en-GRX"/>
+                                            <constraint firstItem="ZsP-Fd-sYv" firstAttribute="leading" secondItem="mff-Xs-iAM" secondAttribute="leading" id="nit-LZ-NhD"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZsP-Fd-sYv" secondAttribute="trailing" id="yDV-ue-efg"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-PZ-79n">
+                                        <rect key="frame" x="32" y="0.0" width="342" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="svF-uF-0HH" secondAttribute="trailing" constant="8" id="US7-f1-Qx7"/>
+                            <constraint firstItem="svF-uF-0HH" firstAttribute="leading" secondItem="iLE-bj-Xl9" secondAttribute="leading" constant="8" id="bDZ-Cl-Ndi"/>
+                            <constraint firstItem="svF-uF-0HH" firstAttribute="top" secondItem="iLE-bj-Xl9" secondAttribute="top" constant="8" id="hhK-Oh-2eh"/>
+                            <constraint firstAttribute="bottom" secondItem="svF-uF-0HH" secondAttribute="bottom" constant="8" id="pKP-yJ-71e"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iLE-bj-Xl9" secondAttribute="bottom" id="EY3-tB-51v"/>
+                <constraint firstItem="iLE-bj-Xl9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dgs-SV-CgF"/>
+                <constraint firstAttribute="trailing" secondItem="iLE-bj-Xl9" secondAttribute="trailing" id="o6h-eg-TKb"/>
+                <constraint firstItem="iLE-bj-Xl9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pjA-mz-MUV"/>
+            </constraints>
+            <connections>
+                <outlet property="checkButton" destination="ZsP-Fd-sYv" id="VWs-rk-adi"/>
+                <outlet property="textLabel" destination="TnV-PZ-79n" id="HHK-z2-9LK"/>
+            </connections>
+            <point key="canvasLocation" x="78" y="21"/>
+        </collectionViewCell>
+    </objects>
+</document>
