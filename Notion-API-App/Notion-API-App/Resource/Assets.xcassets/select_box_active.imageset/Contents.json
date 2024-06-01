@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "select_box_active.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
